@@ -4,7 +4,7 @@
     "name": "super-html",
     "description": "i18n:super-html.description",
     "author": "https://github.com/magician-f",
-    "homepage":"https://store.cocos.com/app/detail/3657",
+    "homepage": "https://store.cocos.com/app/detail/3657",
     "main": "./dist/3x/main.js",
     "contributions": {
         "builder": "./dist/3x/builder.js",
@@ -17,17 +17,17 @@
         ],
         "messages": {
             "turn_off": {
-                "methods":[
+                "methods": [
                     "turn_off"
                 ]
             },
-            "turn_on":{
-                "methods":[
+            "turn_on": {
+                "methods": [
                     "turn_on"
                 ]
             },
-            "delete_node":{
-                "methods":[
+            "delete_node": {
+                "methods": [
                     "delete_node"
                 ]
             },
@@ -55,15 +55,13 @@
             }
         ]
     },
-    "devDependencies": {
-    },
     "dependencies": {
         "cheerio": "^1.0.0-rc.12",
-        "vue": "^3.1.4",
         "clean-css": "^4.2.1",
         "jszip": "^3.7.1",
         "mime-types": "^2.1.32",
-        "uglify-js": "^3.6.0"
+        "uglify-js": "^3.19.3",
+        "vue": "^3.1.4"
     },
     "panels": {
         "default": {
