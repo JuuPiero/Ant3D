@@ -1,3 +1,5 @@
+import { EDITOR, PREVIEW } from "cc/env";
+
 export class EventBus {
 
     private static events = new Map<string, Function[]>();
@@ -23,6 +25,10 @@ export class EventBus {
         if (!arr) return;
 
         arr.forEach(cb => cb.apply(args));
-        console.log("Raise event: " + event);
+
+        if (PREVIEW || EDITOR) {
+            console.log("Raise event: " + event);
+
+        }
     }
 }

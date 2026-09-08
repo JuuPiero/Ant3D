@@ -1,0 +1,4796 @@
+{
+  "Name": "marketing_blck&wht NEW",
+  "GridSize": { "x": 9, "y": 9, "z": 9 },
+  "CellSize": 0.4,
+  "GridOrigin": { "x": 0, "y": -2.48, "z": 0 },
+  "DefaultRotation": { "x": 58.23, "y": 0, "z": 0 },
+  "KeyScale": 1,
+  "Cubes": [
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 0, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 0, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 0, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 0, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 0, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 0, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 0, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 0, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 0, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 1, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 1, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 1, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 1, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 1, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 1, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 1, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 1, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 1, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 2, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 2, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 2, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 2, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 2, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 2, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 2, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 2, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 2, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 4 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 4 },
+      "Color": 18,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 4 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 3, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 3, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 3, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 3, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 3, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 3, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 3, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 3, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 3, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 4 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 4 },
+      "Color": 18,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 4 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 4, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 4, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 4, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 4, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 4, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 4, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 4, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 4, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 4, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 3 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 4 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 4 },
+      "Color": 18,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 4 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 5 },
+      "Color": 22,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 5, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 5, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 5, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 5, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 5, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 5, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 5, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 5, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 5, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 2 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 3 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 4 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 5 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 6 },
+      "Color": 16,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 6, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 6, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 6, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 6, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 6, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 6, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 6, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 6, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 6, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 1 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 2 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 3 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 4 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 5 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 6 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 7 },
+      "Color": 1,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 7, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 7, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 7, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 7, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 7, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 7, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 7, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 7, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 7, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 0 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 0 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 1 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 1 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 2 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 2 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 3 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 3 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 4 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 4 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 5 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 5 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 6 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 6 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 7 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 7 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 0, "y": 8, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 1, "y": 8, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 2, "y": 8, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 3, "y": 8, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 4, "y": 8, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 5, "y": 8, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 6, "y": 8, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 7, "y": 8, "z": 8 },
+      "Color": 28,
+      "Health": 1,
+      "IsKey": 0
+    },
+    {
+      "GridPosition": { "x": 8, "y": 8, "z": 8 },
+      "Color": 29,
+      "Health": 1,
+      "IsKey": 0
+    }
+  ],
+  "LineCount": 3,
+  "ShooterSpawnData": [
+    {
+      "Color": 28,
+      "Ammo": 40,
+      "Line": 0,
+      "Index": 0,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 28,
+      "Ammo": 40,
+      "Line": 1,
+      "Index": 0,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 28,
+      "Ammo": 40,
+      "Line": 2,
+      "Index": 0,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 29,
+      "Ammo": 40,
+      "Line": 0,
+      "Index": 2,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 29,
+      "Ammo": 40,
+      "Line": 1,
+      "Index": 2,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 29,
+      "Ammo": 40,
+      "Line": 2,
+      "Index": 2,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 28,
+      "Ammo": 20,
+      "Line": 0,
+      "Index": 1,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 28,
+      "Ammo": 22,
+      "Line": 1,
+      "Index": 1,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 28,
+      "Ammo": 30,
+      "Line": 2,
+      "Index": 1,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 29,
+      "Ammo": 20,
+      "Line": 0,
+      "Index": 3,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 29,
+      "Ammo": 24,
+      "Line": 1,
+      "Index": 3,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 29,
+      "Ammo": 30,
+      "Line": 2,
+      "Index": 3,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 1,
+      "Ammo": 40,
+      "Line": 0,
+      "Index": 4,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 16,
+      "Ammo": 20,
+      "Line": 0,
+      "Index": 6,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 22,
+      "Ammo": 10,
+      "Line": 0,
+      "Index": 8,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 1,
+      "Ammo": 40,
+      "Line": 1,
+      "Index": 4,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 16,
+      "Ammo": 18,
+      "Line": 1,
+      "Index": 7,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 1,
+      "Ammo": 40,
+      "Line": 2,
+      "Index": 4,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 16,
+      "Ammo": 20,
+      "Line": 1,
+      "Index": 6,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 22,
+      "Ammo": 14,
+      "Line": 2,
+      "Index": 8,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 1,
+      "Ammo": 30,
+      "Line": 0,
+      "Index": 5,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 1,
+      "Ammo": 30,
+      "Line": 1,
+      "Index": 5,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 16,
+      "Ammo": 10,
+      "Line": 0,
+      "Index": 7,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 1,
+      "Ammo": 38,
+      "Line": 2,
+      "Index": 5,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 18,
+      "Ammo": 3,
+      "Line": 1,
+      "Index": 8,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 16,
+      "Ammo": 10,
+      "Line": 2,
+      "Index": 7,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    },
+    {
+      "Color": 16,
+      "Ammo": 20,
+      "Line": 2,
+      "Index": 6,
+      "ConnectionGroup": 0,
+      "IsMystery": 0,
+      "FrozenAmmo": 0,
+      "Tunnel": [],
+      "TunnelSlotCount": 1,
+      "SecondColor": -1,
+      "SecondAmmo": 0,
+      "IsCaged": 0,
+      "RequiredKeys": 1
+    }
+  ],
+  "Difficulty": 0,
+  "ExcludeFromRandomRounds": 0,
+  "IntroStyle": 1,
+  "IntroStartFrom": 0
+}
