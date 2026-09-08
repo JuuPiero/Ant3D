@@ -442,6 +442,7 @@
     "_enabled": true,
     "__prefab": null,
     "gameConfig": null,
+    "colorsConfig": null,
     "levelManager": {
       "__id__": 18
     },
