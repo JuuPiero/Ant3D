@@ -6,25 +6,35 @@ import { GameEvents } from './GameEvents';
 import { PREVIEW } from 'cc/env';
 import { ETrackingEvent, TrackingManager } from '../../_iKame/Scripts/TrackingManager';
 import { GameConfig } from './Data/GameConfig';
+import { ColorsConfig } from './Data/ColorsConfig';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
 export class GameManager extends Component {
 
     @property(GameConfig) gameConfig: GameConfig = null;
+    @property(ColorsConfig) colorsConfig: ColorsConfig = null;
+
     @property(LevelManager) levelManager: LevelManager = null;
 
 
 
     protected onLoad(): void {
         ServiceLocator.register(GameManager, this);
+        ServiceLocator.register(GameConfig, this.gameConfig);
+        ServiceLocator.register(ColorsConfig, this.colorsConfig);
+        ServiceLocator.register(LevelManager, this.levelManager);
+    }
 
+    protected start(): void {
+        EventBus.emit(GameEvents.NEW_LEVEL);
+        
     }
 
     protected onEnable(): void {
-        EventBus.on(GameEvents.NEW_LEVEL, this.onNewgame)
-        EventBus.on(GameEvents.LEVEL_WIN, this.onWinGame)
-        EventBus.on(GameEvents.LEVEL_LOSE, this.onLoseGame)
+        EventBus.on(GameEvents.NEW_LEVEL, this.onNewgame);
+        EventBus.on(GameEvents.LEVEL_WIN, this.onWinGame);
+        EventBus.on(GameEvents.LEVEL_LOSE, this.onLoseGame);
 
 
     }
@@ -37,7 +47,7 @@ export class GameManager extends Component {
 
 
     onNewgame = () => {
-
+        this.levelManager.initialize();
     }
 
     onWinGame = () => {
