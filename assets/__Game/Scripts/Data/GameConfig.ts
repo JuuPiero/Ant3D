@@ -9,7 +9,7 @@ export class GameConfig extends bh.ScriptableAsset {
     @property(Prefab) tilePrefab: Prefab = null;
     @property(Prefab) shooterPrefab: Prefab = null;
     @property(Prefab) slotPrefab: Prefab = null;
-    
+    @property(Prefab) antPrefab: Prefab = null;
 
 }
 

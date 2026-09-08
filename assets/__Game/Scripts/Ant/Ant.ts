@@ -7,7 +7,6 @@ export class Ant extends Component {
     @property(Tile) target: Tile = null;
     @property(Renderer) renderers: Renderer[] = [];
 
-
     setColor(colorId: number) {
 
     }

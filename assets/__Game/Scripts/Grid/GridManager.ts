@@ -9,8 +9,10 @@ const { ccclass, property } = _decorator;
 export class GridManager extends Component {
 
     @property(Tile) tiles: Tile[] = [];
+    @property(Vec3) gridSize: Vec3 = new Vec3();
 
     public initialize(levelData: LevelData) {
+        this.gridSize = levelData.GridSize;
         const tilePrefab = ServiceLocator.get(GameConfig).tilePrefab;
         const tileDatas = levelData.Cubes;
 
