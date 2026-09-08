@@ -1,0 +1,182 @@
+// Precise port of Unity Shader Graph "Block son.shadergraph" (URP Unlit).
+// HSV hue shift on shadow color only, smoothstep diffuse, Phong spec blended toward bright.
+// Lighting direction is intentionally NOT normalized — magnitude affects the smoothstep ramp, matching Unity.
+// Color pipeline: sRGB in (from instancing or property) → linear for math → sRGB out.
+
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: block-gen-vs:vert
+      frag: block-gen-fs:frag
+      properties:
+        mainColor:       { value: [1, 0.1839623, 0.1839623, 1], editor: { displayName: BaseColor, type: color } }
+        color:           { value: [1, 1, 1, 1], target: mainColor, editor: { visible: false } }
+        shadowColor:     { value: [0.627451, 0.01568628, 0.01960784, 1], editor: { displayName: ShadowColor, type: color } }
+        smoothness:      { value: 0.1, target: params.y, editor: { displayName: Smoothness, slide: true, range: [0.1, 1], step: 0.001 } }
+        lightingDir:     { value: [1.0, 1.0, 0.0, 0.0], editor: { displayName: Lighting } }
+      rasterizerState:
+        cullMode: back
+      depthStencilState:
+        depthTest: true
+        depthWrite: true
+  - name: transparent
+    passes:
+    - vert: block-gen-vs:vert
+      frag: block-gen-fs:frag
+      depthStencilState:
+        depthTest: true
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      properties:
+        mainColor:       { value: [1, 0.1839623, 0.1839623, 1], editor: { type: color } }
+        shadowColor:     { value: [0.627451, 0.01568628, 0.01960784, 1], editor: { type: color } }
+        smoothness:      { value: 0.1, target: params.y }
+        lightingDir:     { value: [1.0, 1.0, 0.0, 0.0] }
+}%
+
+CCProgram block-gen-ubo %{
+  uniform Constants {
+    vec4 mainColor;
+    vec4 shadowColor;
+    vec4 params;       // y = smoothness
+    vec4 lightingDir;
+  };
+}%
+
+CCProgram block-gen-vs %{
+  precision highp float;
+  #include <legacy/input-standard>
+  #include <builtin/uniforms/cc-global>
+  #include <legacy/decode-base>
+  #include <legacy/local-batch>
+  #include <block-gen-ubo>
+  #include <legacy/fog-vs>
+
+  out vec3 v_worldPos;
+  out vec3 v_normal;
+  out vec4 v_color;
+  out vec4 v_shadowColor;
+
+  #if USE_INSTANCING
+  in vec4 a_instancedColor;
+  in vec4 a_instancedShadowColor;
+  #endif
+
+  vec4 vert () {
+    StandardVertInput In;
+    CCVertInput(In);
+
+    mat4 matWorld, matWorldIT;
+    CCGetWorldMatrixFull(matWorld, matWorldIT);
+
+    vec4 pos = matWorld * In.position;
+    v_worldPos = pos.xyz;
+    v_normal = normalize((matWorldIT * vec4(In.normal, 0.0)).xyz);
+
+    #if USE_INSTANCING
+    v_color = a_instancedColor;
+    v_shadowColor = a_instancedShadowColor;
+    #else
+    v_color = mainColor;
+    v_shadowColor = shadowColor;
+    #endif
+
+    CC_TRANSFER_FOG(pos);
+
+    #if CC_USE_2D
+      return cc_matProj * cc_matView * In.position;
+    #else
+      return cc_matProj * (cc_matView * matWorld) * In.position;
+    #endif
+  }
+}%
+
+CCProgram block-gen-fs %{
+  precision highp float;
+  #include <builtin/uniforms/cc-global>
+  #include <block-gen-ubo>
+  #include <legacy/output-standard>
+  #include <legacy/fog-fs>
+
+  in vec3 v_worldPos;
+  in vec3 v_normal;
+  in vec4 v_color;
+  in vec4 v_shadowColor;
+
+  // Exact sRGB-to-linear curve matching Unity (piecewise with linear toe).
+  vec3 sRGBToLinearExact (vec3 c) {
+    vec3 lo = c / 12.92;
+    vec3 hi = pow((c + 0.055) / 1.055, vec3(2.4));
+    return mix(hi, lo, step(c, vec3(0.04045)));
+  }
+
+  // Exact port of Unity Shader Graph's Unity_Hue_Degrees_float (HSV-based hue shift).
+  vec3 hueShiftHSV (vec3 rgbIn, float offsetDeg) {
+    vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+    vec4 P = mix(vec4(rgbIn.zy, K.wz), vec4(rgbIn.yz, K.xy), step(rgbIn.z, rgbIn.y));
+    vec4 Q = mix(vec4(P.xyw, rgbIn.x), vec4(rgbIn.x, P.yzx), step(P.x, rgbIn.x));
+    float D = Q.x - min(Q.w, Q.y);
+    float E = 1e-10;
+    float V = (D == 0.0) ? Q.x : (Q.x + E);
+    vec3 hsv = vec3(abs(Q.z + (Q.w - Q.y) / (6.0 * D + E)), D / (Q.x + E), V);
+
+    float hue = hsv.x + offsetDeg / 360.0;
+    hsv.x = (hue < 0.0) ? hue + 1.0 : (hue > 1.0) ? hue - 1.0 : hue;
+
+    vec4 K2 = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    vec3 P2 = abs(fract(hsv.xxx + K2.xyz) * 6.0 - K2.www);
+    return hsv.z * mix(K2.xxx, clamp(P2 - K2.xxx, 0.0, 1.0), hsv.y);
+  }
+
+  vec4 frag () {
+    vec4 col = v_color;
+
+    // Both instanced and property colors arrive in sRGB (GameManager.sRGBToLinear is a no-op).
+    // Convert to linear using Unity's exact sRGB piecewise curve.
+    col.rgb = sRGBToLinearExact(col.rgb);
+
+    vec4 shadowCol = v_shadowColor;
+    shadowCol.rgb = sRGBToLinearExact(shadowCol.rgb);
+
+    // Hue shift applied to shadow color only (degrees)
+    vec3 hueShifted = hueShiftHSV(shadowCol.xyz, params.x);
+
+    // Diffuse: dot(N, L) through smoothstep ramp
+    vec3 N = normalize(v_normal);
+    vec3 L = lightingDir.xyz;
+    float NdotL = dot(N, L);
+    float diffuse = clamp(smoothstep(-0.42, 1.16, NdotL), 0.0, 1.0);
+
+    // Lerp shadow color → original color based on lighting
+    vec3 baseLit = mix(hueShifted, col.xyz, diffuse);
+
+    vec3 bright = clamp(baseLit * 3.0 + 0.1, 0.0, 1.0);
+
+    // View direction: for orthographic cameras, use the constant camera forward direction.
+    // Unity's GetWorldSpaceNormalizeViewDir does this automatically for ortho.
+    // Third row of cc_matView = camera's view-space Z axis in world coords = surface→camera direction.
+    vec3 V = normalize(vec3(cc_matView[0].z, cc_matView[1].z, cc_matView[2].z));
+    vec3 R = reflect(L, N);
+    float RdotV = dot(R, V);
+    float specRaw = smoothstep(0.29, 1.43, -RdotV);
+    float spec = pow(specRaw, params.y * 15.0) * params.y;
+
+    // Final: lerp base toward bright based on specular
+    vec3 finalColor = mix(baseLit, bright, spec);
+
+    // Pipeline compensation: Cocos CCFragOutput produces slightly brighter output than Unity.
+    // This subtle gamma nudge darkens shadows ~5% while barely touching highlights.
+    // Tune this value: increase for darker, decrease toward 1.0 for lighter.
+    finalColor = pow(finalColor, vec3(1.55));
+
+    vec4 o = vec4(finalColor, col.a);
+    CC_APPLY_FOG(o);
+    return CCFragOutput(o);
+  }
+}%

@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Tile3D",
+    "_name": "Slot",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Tile3D",
+    "_name": "Slot",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -22,13 +22,10 @@
     "_components": [
       {
         "__id__": 2
-      },
-      {
-        "__id__": 5
       }
     ],
     "_prefab": {
-      "__id__": 7
+      "__id__": 5
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -45,9 +42,9 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
+      "x": 1.1,
+      "y": 0.2,
+      "z": 1.1
     },
     "_mobility": 0,
     "_layer": 1073741824,
@@ -73,7 +70,7 @@
     },
     "_materials": [
       {
-        "__uuid__": "0b8a28cf-5288-418e-9a79-bde8ce6145d8",
+        "__uuid__": "620b6bf3-0369-4560-837f-2a2c00b73c26",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -98,7 +95,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "c5NrvEOo1Fuac/u+KYLElR"
+    "fileId": "e8IkGlLGpK0qD7A2mC1sLL"
   },
   {
     "__type__": "cc.ModelBakeSettings",
@@ -121,29 +118,6 @@
     "_bakeToReflectionProbe": true
   },
   {
-    "__type__": "16845Am251Ncppngf3FlnGg",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "__prefab": {
-      "__id__": 6
-    },
-    "data": null,
-    "renderer": {
-      "__id__": 2
-    },
-    "isTargeted": false,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.CompPrefabInfo",
-    "fileId": "2ejyxf+chP6aIa4Z8tKk57"
-  },
-  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -151,8 +125,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "51GDfu+ZxJ74q+c3E2l4Av",
-    "instance": null,
+    "fileId": "17e+x/KyhITLbX3w+v/VvP",
     "targetOverrides": null
   }
 ]

@@ -3,12 +3,13 @@ const { ccclass, property } = _decorator;
 
 @ccclass('Grid3D')
 export class Grid3D extends Component {
-    start() {
+    
+    
+
+    initialize() {
 
     }
 
-    update(deltaTime: number) {
-        
-    }
 }
-
+
+

@@ -1,0 +1,19 @@
+{
+  "__type__": "d0881t8AI5BRpnF7z3fp4Kv",
+  "_name": "GameConfig",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "tilePrefab": {
+    "__uuid__": "64f3d9e6-efda-4660-b22b-71ba995e0b2e",
+    "__expectedType__": "cc.Prefab"
+  },
+  "shooterPrefab": {
+    "__uuid__": "c8162f3d-ea06-439d-bcdd-20755b6b65f7",
+    "__expectedType__": "cc.Prefab"
+  },
+  "slotPrefab": {
+    "__uuid__": "650f0e3b-c25c-4651-ab9a-7d4ecd430f20",
+    "__expectedType__": "cc.Prefab"
+  }
+}
