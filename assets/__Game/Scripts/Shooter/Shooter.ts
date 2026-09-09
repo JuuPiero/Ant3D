@@ -13,6 +13,11 @@ export class Shooter extends Component implements IPointerClickHandler {
 
     @property(MeshRenderer) renderers: MeshRenderer[] = [];
 
+    /** Set by ShooterManager per-instance; avoids a circular back-reference @property. */
+    onClick: (shooter: Shooter) => void = null;
+
+    isBusy: boolean = false;
+
     initialize(data: ShooterData) {
         this.data = data;
         this.setColor();
@@ -29,8 +34,10 @@ export class Shooter extends Component implements IPointerClickHandler {
     }
 
     onPointerClick(event: EventMouse | EventTouch): void {
-        console.log("Click shooter " );
+        console.log("clicked");
         
+        if (this.isBusy) return;
+        this.onClick?.(this);
     }
 
 }

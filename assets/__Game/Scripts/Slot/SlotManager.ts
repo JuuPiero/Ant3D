@@ -10,6 +10,9 @@ export class SlotManager extends Component {
 
     @property spacing: number = 1;
 
+    private slots: Node[] = [];
+    private occupied: boolean[] = [];
+
     initialize() {
         const slotPrefab = ServiceLocator.get(GameConfig).slotPrefab;
         const offset = (this.count - 1) / 2;
@@ -17,7 +20,22 @@ export class SlotManager extends Component {
             const slotNode = instantiate(slotPrefab)
             slotNode.setParent(this.node)
             slotNode.setPosition((i - offset) * this.spacing, 0, 0);
+            this.slots.push(slotNode);
+            this.occupied.push(false);
         }
+    }
+
+    getEmptySlot(): Node | null {
+        const index = this.occupied.indexOf(false);
+        return index === -1 ? null : this.slots[index];
+    }
+
+    occupy(slot: Node) {
+        this.occupied[this.slots.indexOf(slot)] = true;
+    }
+
+    free(slot: Node) {
+        this.occupied[this.slots.indexOf(slot)] = false;
     }
 }
 

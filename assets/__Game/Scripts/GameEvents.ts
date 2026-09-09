@@ -3,4 +3,5 @@ export const GameEvents = {
     LEVEL_WIN: "LEVEL_WIN",
     LEVEL_LOSE: "LEVEL_LOSE",
     TOGGLE_VIDEO: "TOGGLE_VIDEO",
+    GRID_FACE_ADVANCED: "GRID_FACE_ADVANCED",
 }
