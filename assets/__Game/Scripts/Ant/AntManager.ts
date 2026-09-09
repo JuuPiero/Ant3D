@@ -1,21 +1,26 @@
 import { Node, Prefab, Vec3, tween } from 'cc';
-import { Ant } from './Ant';
+import { Ant, PathPoint } from './Ant';
 import { AntPool } from './AntPool';
-import { arcControlPoint, wallNormalFrom } from './AntPath';
+import { arcControlPoint } from './AntPath';
 import { GridManager } from '../Grid/GridManager';
 import { Tile } from '../Grid/Tile';
 
 const SPAWN_STAGGER = 0.08;
 const MIN_SEGMENT_DURATION = 0.25;
+const PICKUP_PAUSE = 0.15; // beat at the tile before turning around to head back down/out
 
 // Ground approach (slot<->grid, grid<->hole): slow, visible pace with a light bouncy arc.
 const WALK_SPEED = 3
 const WALK_LIFT = 0.25;
 const WALK_JITTER = 0.3;
 
-// Climbing the grid face up/down to reach a tile that isn't at ground level.
+// Climbing the grid face up/down to reach a tile that isn't at ground level. No jitter and a
+// fixed, purely axis-aligned outward normal - the grid's exposed face always faces world -Z
+// (tiles are peeled ascending Z, ants approach from the -Z/shooter side) regardless of which
+// direction a given ant happened to walk in from - so the body stays perfectly squared to the
+// grid the whole time it's touching it, instead of inheriting a diagonal from the walk-in.
 const CLIMB_SPEED = 2;
-const CLIMB_JITTER = 0.12;
+const GRID_OUTWARD_NORMAL = new Vec3(0, 0, -1);
 
 /**
  * Orchestrates the whole ant lifecycle once a shooter releases its swarm: spawn -> walk to the
@@ -63,57 +68,83 @@ export class AntManager {
         return true;
     }
 
-    /** Walk to the base of the tile's column at ground level, then climb straight up to it. */
+    /**
+     * Walk to the base of the tile's column at ground level, then climb straight up to it - but
+     * only for row > 0. Row 0 sits right at ground level (its "bottom edge" pickup point is only
+     * about half a tile below where the ant is already walking), so it doesn't need the separate
+     * wall-climb treatment at all: just walk straight to it.
+     */
     private travelToTile(ant: Ant, tile: Tile) {
         const start = ant.node.worldPosition.clone();
-        const tileCenter = tile.node.worldPosition;
 
-        // The wall the ant is about to climb: it's whatever it was walking toward, so its
-        // outward normal is the reverse of the walk direction. Reused for the matching descent
-        // so the body doesn't re-derive (and potentially flip) a new normal on the way down.
-        const wallNormal = wallNormalFrom(start, new Vec3(tileCenter.x, start.y, tileCenter.z));
+        // The tile's own position is its mesh center; walk/climb to its outward bottom edge
+        // instead so the ant stops at the surface rather than sinking into the cube. Read live
+        // (not snapshotted) while climbing: a tile below it in the same column can get collected
+        // and settle this one down mid-climb, and the ant needs to track that, not fly to a
+        // now-stale position.
+        const getTop = () => tile.getPickupPoint(GRID_OUTWARD_NORMAL);
+        const top = getTop();
+        const needsClimb = tile.data.GridPosition.y > 0;
 
-        // The tile's own position is its mesh center; climb/walk to its outward bottom edge
-        // instead so the ant stops at the surface rather than sinking into the cube.
-        const top = tile.getPickupPoint(wallNormal);
-        const base = new Vec3(top.x, start.y, top.z);
+        const onArrived = () => {
+            if (this.gridManager.collectTile(tile)) {
+                tile.pickUp(ant.tileCollectedPos);
+            }
+            // A short beat before turning around: without it, the 180-degree reversal (facing
+            // up the wall to facing down it) starts instantly off the climb's own momentum,
+            // which reads as a jerky whip-turn no matter how eased the rotation itself is.
+            tween({})
+                .delay(PICKUP_PAUSE)
+                .call(() => this.travelToHole(ant, needsClimb))
+                .start();
+        };
 
-        this.walk(ant, start, base, () => {
-            this.climb(ant, base, top, wallNormal, () => {
-                if (this.gridManager.collectTile(tile)) {
-                    tile.pickUp(ant.tileCollectedPos);
-                }
-                this.travelToHole(ant, wallNormal);
-            });
-        });
+        if (needsClimb) {
+            const base = new Vec3(top.x, start.y, top.z);
+            this.walk(ant, start, base, () => this.climb(ant, base, getTop, onArrived));
+        } else {
+            this.walk(ant, start, top, onArrived);
+        }
     }
 
-    /** Turn around, climb back down to ground level, then walk to the hole. */
-    private travelToHole(ant: Ant, wallNormal: Vec3) {
+    /** Turn around, climb back down to ground level (if it had climbed up at all), then walk to the hole. */
+    private travelToHole(ant: Ant, wasClimbing: boolean) {
         const top = ant.node.worldPosition.clone();
         const holePos = this.hole.worldPosition.clone();
-        const base = new Vec3(top.x, holePos.y, top.z);
 
-        this.climb(ant, top, base, wallNormal, () => {
-            this.walk(ant, base, holePos, () => {
-                ant.tileCollectedPos.children[0]?.destroy();
-                this.pool.release(ant.node);
-            });
-        });
+        if (wasClimbing) {
+            const base = new Vec3(top.x, holePos.y, top.z);
+            this.climb(ant, top, base, () => this.walk(ant, base, holePos, () => this.arriveAtHole(ant)));
+        } else {
+            this.walk(ant, top, holePos, () => this.arriveAtHole(ant));
+        }
     }
 
-    /** Ground segment: body stays level, standard world-up orientation. */
+    private arriveAtHole(ant: Ant) {
+        ant.tileCollectedPos.children[0]?.destroy();
+        this.pool.release(ant.node);
+    }
+
+    /** Ground segment, before touching or after leaving the grid: free, damped turning. */
     private walk(ant: Ant, from: Vec3, to: Vec3, onDone: () => void) {
         const mid = arcControlPoint(from, to, WALK_LIFT, WALK_JITTER);
         const duration = Math.max(MIN_SEGMENT_DURATION, Vec3.distance(from, to) / WALK_SPEED);
-        ant.flyTo(from, mid, to, duration, Vec3.UP, onDone);
+        ant.flyTo(from, mid, to, duration, Vec3.UP, false, onDone);
     }
 
-    /** Vertical segment: body tips upright against the wall, treating it as the new floor. */
-    private climb(ant: Ant, from: Vec3, to: Vec3, wallNormal: Vec3, onDone: () => void) {
-        const mid = arcControlPoint(from, to, 0, CLIMB_JITTER);
-        const duration = Math.max(MIN_SEGMENT_DURATION, Vec3.distance(from, to) / CLIMB_SPEED);
-        ant.flyTo(from, mid, to, duration, wallNormal, onDone);
+    /**
+     * Vertical segment along the grid face: body snapped upright against the wall (treating it
+     * as the new floor), squared to the fixed grid normal for as long as it's touching the grid.
+     * `to` may be a live getter (see travelToTile) instead of a fixed point.
+     */
+    private climb(ant: Ant, from: Vec3, to: PathPoint, onDone: () => void) {
+        const getTo = typeof to === 'function' ? to : null;
+        const toSnapshot = getTo ? getTo() : (to as Vec3);
+        const mid: PathPoint = getTo
+            ? () => Vec3.lerp(new Vec3(), from, getTo(), 0.5)
+            : arcControlPoint(from, toSnapshot, 0, 0);
+        const duration = Math.max(MIN_SEGMENT_DURATION, Vec3.distance(from, toSnapshot) / CLIMB_SPEED);
+        ant.flyTo(from, mid, to, duration, GRID_OUTWARD_NORMAL, true, onDone);
     }
 
 }

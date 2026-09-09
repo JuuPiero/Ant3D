@@ -23,17 +23,6 @@ export function bezierTangent(p0: Vec3, p1: Vec3, p2: Vec3, t: number, out: Vec3
 }
 
 /**
- * Horizontal outward-facing normal of the "wall" an ant is about to climb, derived from the
- * direction it walked in to reach the base of the climb (it approached facing the wall, so its
- * back - the direction treated as "up" while climbing - points the opposite way). Falls back to
- * `fallback` when start and base are the same point (nothing to derive a direction from).
- */
-export function wallNormalFrom(start: Vec3, base: Vec3, fallback: Vec3 = new Vec3(0, 0, -1)): Vec3 {
-    const dir = new Vec3(start.x - base.x, 0, start.z - base.z);
-    return dir.lengthSqr() > 1e-6 ? dir.normalize() : fallback.clone();
-}
-
-/**
  * Mid control point for a leg between `from` and `to`: raises the arc off the ground and
  * offsets it sideways a little so parallel ants in a swarm don't overlap the same line.
  */

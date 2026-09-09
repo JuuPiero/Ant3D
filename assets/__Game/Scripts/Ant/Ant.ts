@@ -8,6 +8,16 @@ const { ccclass, property } = _decorator;
 const HOP_HEIGHT = 0.15;
 const HOP_RATE = 2.2; // hops per second, kept constant regardless of segment length/duration
 const TURN_DAMPING = 0.18;
+const SQUARE_UP_DURATION = 0.3; // seconds to ease into grid-aligned rotation once `snap` is on
+
+const smoothstep = (t: number) => t * t * (3 - 2 * t);
+
+/** A path point that's either fixed, or re-read live every frame (e.g. a tile that can shift). */
+export type PathPoint = Vec3 | (() => Vec3);
+const resolvePoint = (p: PathPoint, out: Vec3): Vec3 => {
+    out.set(typeof p === 'function' ? p() : p);
+    return out;
+};
 
 @ccclass('Ant')
 export class Ant extends Component {
@@ -29,34 +39,51 @@ export class Ant extends Component {
 
     /**
      * Flies along the quadratic Bezier p0->p1->p2, with a footstep-like hop layered on top of
-     * the curve and the node turning to face its direction of travel (damped so it eases into
-     * turns rather than snapping frame to frame).
+     * the curve and the node turning to face its direction of travel.
      *
      * `up` is the body's reference "up" axis: world-up while walking the ground, or the wall's
      * outward normal while climbing a vertical face - so climbing visibly tips the body upright
      * against the wall (treating it as the new floor) instead of just floating up the Y axis.
+     *
+     * `snap` picks how that turn is applied: damped (continuously eases toward wherever the
+     * curve is currently heading) for free-roaming ground travel, or - for climbing - a single
+     * smooth ease from whatever angle it was facing into the grid-aligned orientation over
+     * `SQUARE_UP_DURATION`, then held exactly there for the rest of the segment. That guarantees
+     * it's squared up with the grid well before it reaches the tile (never left lagging), without
+     * the turn itself popping instantly.
      */
-    flyTo(p0: Vec3, p1: Vec3, p2: Vec3, duration: number, up: Vec3, onDone?: () => void) {
+    flyTo(p0: Vec3, p1: PathPoint, p2: PathPoint, duration: number, up: Vec3, snap: boolean, onDone?: () => void) {
         const pos = new Vec3();
         const tangent = new Vec3();
         const targetRot = new Quat();
         const blendedRot = new Quat();
+        const startRot = this.node.worldRotation.clone();
+        const p1v = new Vec3();
+        const p2v = new Vec3();
 
         tween(this.node)
             .to(duration, {}, {
                 onUpdate: (_target: unknown, ratio = 0) => {
-                    bezierPoint(p0, p1, p2, ratio, pos);
+                    resolvePoint(p1, p1v);
+                    resolvePoint(p2, p2v);
+
+                    bezierPoint(p0, p1v, p2v, ratio, pos);
                     const elapsed = ratio * duration;
                     pos.y += Math.max(0, Math.sin(elapsed * HOP_RATE * Math.PI * 2)) * HOP_HEIGHT;
                     this.node.setWorldPosition(pos);
 
-                    bezierTangent(p0, p1, p2, ratio, tangent);
+                    bezierTangent(p0, p1v, p2v, ratio, tangent);
                     if (tangent.lengthSqr() > 1e-6) {
                         // The Bee_2 mesh is authored facing local +Z, not Cocos' usual -Z
                         // "forward" convention, so `view` should point straight along the
                         // travel direction here (not negated).
                         Quat.fromViewUp(targetRot, tangent, up);
-                        Quat.slerp(blendedRot, this.node.worldRotation, targetRot, TURN_DAMPING);
+                        if (snap) {
+                            const squareUpT = smoothstep(Math.min(1, elapsed / SQUARE_UP_DURATION));
+                            Quat.slerp(blendedRot, startRot, targetRot, squareUpT);
+                        } else {
+                            Quat.slerp(blendedRot, this.node.worldRotation, targetRot, TURN_DAMPING);
+                        }
                         this.node.setWorldRotation(blendedRot);
                     }
                 },
