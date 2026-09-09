@@ -39,14 +39,25 @@ export class AntManager {
         this.pool = new AntPool(antPrefab, container);
     }
 
-    spawnSwarm(color: number, count: number, fromWorldPos: Vec3) {
+    /** `onComplete` fires once the whole staggered burst has been dispatched - the full count, or as soon as it stops early. */
+    spawnSwarm(color: number, count: number, fromWorldPos: Vec3, onComplete?: () => void) {
+        if (count <= 0) {
+            onComplete?.();
+            return;
+        }
+
         let stopped = false;
         for (let i = 0; i < count; i++) {
             tween({})
                 .delay(i * SPAWN_STAGGER)
                 .call(() => {
                     if (stopped) return;
-                    if (!this.spawnOne(color, fromWorldPos)) stopped = true;
+                    if (!this.spawnOne(color, fromWorldPos)) {
+                        stopped = true;
+                        onComplete?.();
+                        return;
+                    }
+                    if (i === count - 1) onComplete?.();
                 })
                 .start();
         }

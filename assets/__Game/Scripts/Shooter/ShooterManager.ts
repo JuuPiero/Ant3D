@@ -103,7 +103,8 @@ export class ShooterManager extends Component {
     /**
      * Releases the shooter's swarm and despawns it, but only once at least one matching tile
      * is available; otherwise it stays parked at its slot (still occupying it) until the grid's
-     * outer face advances enough to expose one.
+     * outer face advances enough to expose one. Stays visible until the whole swarm has actually
+     * been dispatched (spawnSwarm's onComplete), not just the moment it started releasing.
      */
     private tryRelease(waiting: WaitingShooter) {
         const { shooter, slot, atWorldPos } = waiting;
@@ -112,9 +113,10 @@ export class ShooterManager extends Component {
             return;
         }
 
-        this.antManager.spawnSwarm(shooter.data.Color, shooter.data.Ammo, atWorldPos);
-        this.slotManager.free(slot);
-        shooter.node.destroy();
+        this.antManager.spawnSwarm(shooter.data.Color, shooter.data.Ammo, atWorldPos, () => {
+            this.slotManager.free(slot);
+            shooter.node.destroy();
+        });
     }
 
     private onFaceAdvanced = () => {
