@@ -1,4 +1,4 @@
-import { _decorator, Color, Component, EventMouse, EventTouch, MeshRenderer, Node } from 'cc';
+import { _decorator, Color, Component, EventMouse, EventTouch, Label, MeshRenderer, Node } from 'cc';
 import { Ant } from '../Ant/Ant';
 import { ShooterData } from '../Data/LevelData';
 import { ServiceLocator } from 'db://assets/_iKame/Scripts/ServiceLocator';
@@ -9,9 +9,11 @@ const { ccclass, property } = _decorator;
 @ccclass('Shooter')
 export class Shooter extends Component implements IPointerClickHandler {
    
-    @property(ShooterData) data: ShooterData = null;
+    @property({type: ShooterData, readonly: true}) data: ShooterData = null;
 
     @property(MeshRenderer) renderers: MeshRenderer[] = [];
+
+    @property(Label) ammolabel: Label = null; 
 
     /** Set by ShooterManager per-instance; avoids a circular back-reference @property. */
     onClick: (shooter: Shooter) => void = null;
@@ -21,6 +23,11 @@ export class Shooter extends Component implements IPointerClickHandler {
     initialize(data: ShooterData) {
         this.data = data;
         this.setColor();
+        this.updateUI()
+    }
+
+    updateUI() {
+        this.ammolabel.string = this.data.Ammo.toString()
     }
 
     setColor() {
@@ -34,8 +41,6 @@ export class Shooter extends Component implements IPointerClickHandler {
     }
 
     onPointerClick(event: EventMouse | EventTouch): void {
-        console.log("clicked");
-        
         if (this.isBusy) return;
         this.onClick?.(this);
     }

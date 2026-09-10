@@ -4,6 +4,8 @@ import { AntPool } from './AntPool';
 import { arcControlPoint } from './AntPath';
 import { GridManager } from '../Grid/GridManager';
 import { Tile } from '../Grid/Tile';
+import { EventBus } from 'db://assets/_iKame/Scripts/EventBus';
+import { GameEvents } from '../GameEvents';
 
 const SPAWN_STAGGER = 0.08;
 const MIN_SEGMENT_DURATION = 0.25;
@@ -21,48 +23,81 @@ const WALK_JITTER = 0.3;
 // inheriting a diagonal from the walk-in. That local normal is carried into world space via
 // GridManager.getOutwardNormal() so it still tracks the wall correctly if the grid itself has
 // been rotated to some arbitrary angle, instead of assuming it always faces world -Z.
-const CLIMB_SPEED = 2;
+const CLIMB_SPEED = 3;
 const GRID_LOCAL_OUTWARD_NORMAL = new Vec3(0, 0, -1);
+
+// However scattered the wall approach is, every ant heading back to the hole is routed through
+// this one fixed point first - so instead of each ant drawing its own independent line back
+// (which reads as several rays converging on the hole), they all fold onto the same final lane
+// and the swarm reads as one braided, single-file queue feeding the hole, matching the reference.
+const HOLE_MERGE_DIST = 1;
+
+interface PendingSwarm {
+    color: number;
+    fromWorldPos: Vec3;
+    remaining: number;
+    onAmmoUsed?: () => void;
+    onComplete?: () => void;
+}
 
 /**
  * Orchestrates the whole ant lifecycle once a shooter releases its swarm: spawn -> walk to the
  * base of the target tile's column -> climb the face if it's not at ground level -> collect ->
  * turn around, climb back down -> walk to the hole -> despawn.
- * If a matching tile isn't available for one ant in the burst, the whole swarm release stops
- * right there (remaining Ammo just doesn't get spawned) instead of parking ants to wait.
+ * A shooter's Ammo is sized against the *whole* grid (every z-layer combined), not just
+ * whatever's exposed on the outer face the moment it fires - so if the face runs dry of a
+ * color mid-burst, the remaining ammo is parked (not dropped) and resumed as soon as more of
+ * that color is exposed, keeping ants-spawned == Ammo once the level actually has that much.
  * Plain class, not a Component: everything here is driven by tweens, nothing needs scene-node
- * lifecycle.
+ * lifecycle - but it does subscribe to an EventBus event, so call dispose() when done with it.
  */
 export class AntManager {
 
     private pool: AntPool;
+    private holeMergePoint: Vec3 | null = null;
+    private pendingSwarms: PendingSwarm[] = [];
 
     constructor(private gridManager: GridManager, private hole: Node, antPrefab: Prefab, container: Node) {
         this.pool = new AntPool(antPrefab, container);
+        EventBus.on(GameEvents.GRID_FACE_ADVANCED, this.onFaceAdvanced);
     }
 
-    /** `onComplete` fires once the whole staggered burst has been dispatched - the full count, or as soon as it stops early. */
-    spawnSwarm(color: number, count: number, fromWorldPos: Vec3, onComplete?: () => void) {
-        if (count <= 0) {
-            onComplete?.();
+    dispose() {
+        EventBus.off(GameEvents.GRID_FACE_ADVANCED, this.onFaceAdvanced);
+    }
+
+    /**
+     * `onAmmoUsed` fires once per ant as it's actually dispatched (e.g. to live-update a shooter's
+     * ammo counter in step with what's really happening, instead of just at the start/end of the
+     * burst). `onComplete` fires once `count` ants have actually been spawned - possibly after
+     * waiting across one or more face advances.
+     */
+    spawnSwarm(color: number, count: number, fromWorldPos: Vec3, onAmmoUsed?: () => void, onComplete?: () => void) {
+        this.releaseAmmo({ color, fromWorldPos, remaining: count, onAmmoUsed, onComplete });
+    }
+
+    /** Retry every swarm that ran out of exposed tiles, now that a new face may have opened some up. */
+    private onFaceAdvanced = () => {
+        const jobs = this.pendingSwarms;
+        this.pendingSwarms = [];
+        for (const job of jobs) this.releaseAmmo(job);
+    };
+
+    /** Spawns one ant, then re-schedules itself after SPAWN_STAGGER until `remaining` hits 0. */
+    private releaseAmmo(job: PendingSwarm) {
+        if (job.remaining <= 0) {
+            job.onComplete?.();
             return;
         }
 
-        let stopped = false;
-        for (let i = 0; i < count; i++) {
-            tween({})
-                .delay(i * SPAWN_STAGGER)
-                .call(() => {
-                    if (stopped) return;
-                    if (!this.spawnOne(color, fromWorldPos)) {
-                        stopped = true;
-                        onComplete?.();
-                        return;
-                    }
-                    if (i === count - 1) onComplete?.();
-                })
-                .start();
+        if (!this.spawnOne(job.color, job.fromWorldPos)) {
+            this.pendingSwarms.push(job);
+            return;
         }
+
+        job.remaining--;
+        job.onAmmoUsed?.();
+        tween({}).delay(SPAWN_STAGGER).call(() => this.releaseAmmo(job)).start();
     }
 
     /** Returns false (and spawns nothing) if no tile of `color` is currently on the outer face. */
@@ -92,14 +127,12 @@ export class AntManager {
 
         // The tile's own position is its mesh center; walk/climb to its outward bottom edge
         // instead so the ant stops at the surface rather than sinking into the cube. Read live
-        // (not snapshotted) while climbing: a tile below it in the same column can get collected
-        // and settle this one down mid-climb, and the ant needs to track that, not fly to a
-        // now-stale position.
+        // (not snapshotted) everywhere below: a tile below it in the same column can get
+        // collected and settle this one down - mid-walk or mid-climb - and the ant needs to
+        // track that, not fly to a now-stale position.
         const getTop = () => tile.getPickupPoint(GRID_LOCAL_OUTWARD_NORMAL);
-        const top = getTop();
-        const needsClimb = tile.data.GridPosition.y > 0;
 
-        const onArrived = () => {
+        const onArrived = (didClimb: boolean) => {
             if (this.gridManager.collectTile(tile)) {
                 tile.pickUp(ant.tileCollectedPos);
             }
@@ -108,15 +141,27 @@ export class AntManager {
             // which reads as a jerky whip-turn no matter how eased the rotation itself is.
             tween({})
                 .delay(PICKUP_PAUSE)
-                .call(() => this.travelToHole(ant, needsClimb))
+                .call(() => this.travelToHole(ant, didClimb))
                 .start();
         };
 
-        if (needsClimb) {
-            const base = this.groundPointBelow(top, start.y);
-            this.walk(ant, start, base, () => this.climb(ant, base, getTop, onArrived));
+        if (tile.data.GridPosition.y > 0) {
+            const base = this.groundPointBelow(getTop(), start.y);
+            this.walk(ant, start, base, () => {
+                // Re-checked on arrival, not just decided once back at departure: the column
+                // below can finish compacting - settling this tile all the way to ground level -
+                // while this ant was still walking over, in which case it should be grabbed
+                // directly like any row-0 tile instead of climbing a wall that isn't there for
+                // it anymore (matches the reference: the next ant never climbs for a tile that
+                // already dropped to the bottom).
+                if (tile.data.GridPosition.y > 0) {
+                    this.climb(ant, base, getTop, () => onArrived(true));
+                } else {
+                    this.walk(ant, base, getTop, () => onArrived(false));
+                }
+            });
         } else {
-            this.walk(ant, start, top, onArrived);
+            this.walk(ant, start, getTop, () => onArrived(false));
         }
     }
 
@@ -125,11 +170,16 @@ export class AntManager {
         const top = ant.node.worldPosition.clone();
         const holePos = this.hole.worldPosition.clone();
 
+        const walkIn = (from: Vec3) => {
+            const merge = this.getHoleMergePoint();
+            this.walk(ant, from, merge, () => this.walk(ant, merge, holePos, () => this.arriveAtHole(ant)));
+        };
+
         if (wasClimbing) {
             const base = this.groundPointBelow(top, holePos.y);
-            this.climb(ant, top, base, () => this.walk(ant, base, holePos, () => this.arriveAtHole(ant)));
+            this.climb(ant, top, base, () => walkIn(base));
         } else {
-            this.walk(ant, top, holePos, () => this.arriveAtHole(ant));
+            walkIn(top);
         }
     }
 
@@ -143,15 +193,41 @@ export class AntManager {
         return new Vec3(top.x - up.x * t, groundY, top.z - up.z * t);
     }
 
+    /**
+     * Fixed point every returning ant passes through just before the hole, sitting on the line
+     * from the grid toward the hole. Same point for every ant regardless of which column it
+     * climbed down, so the final leg of the trip always overlaps into one shared lane. Cached
+     * since both ends are static for the level's lifetime.
+     */
+    private getHoleMergePoint(): Vec3 {
+        if (!this.holeMergePoint) {
+            const holePos = this.hole.worldPosition;
+            const dir = Vec3.subtract(new Vec3(), holePos, this.gridManager.node.worldPosition);
+            dir.y = 0;
+            if (dir.lengthSqr() > 1e-6) dir.normalize(); else dir.set(0, 0, 1);
+            this.holeMergePoint = new Vec3(
+                holePos.x - dir.x * HOLE_MERGE_DIST,
+                holePos.y,
+                holePos.z - dir.z * HOLE_MERGE_DIST,
+            );
+        }
+        return this.holeMergePoint;
+    }
+
     private arriveAtHole(ant: Ant) {
         ant.tileCollectedPos.children[0]?.destroy();
         this.pool.release(ant.node);
     }
 
-    /** Ground segment, before touching or after leaving the grid: free, damped turning. */
-    private walk(ant: Ant, from: Vec3, to: Vec3, onDone: () => void) {
-        const mid = arcControlPoint(from, to, WALK_LIFT, WALK_JITTER);
-        const duration = Math.max(MIN_SEGMENT_DURATION, Vec3.distance(from, to) / WALK_SPEED);
+    /**
+     * Ground segment, before touching or after leaving the grid: free, damped turning.
+     * `to` may be a live getter (see travelToTile) instead of a fixed point.
+     */
+    private walk(ant: Ant, from: Vec3, to: PathPoint, onDone: () => void) {
+        const getTo = typeof to === 'function' ? to : null;
+        const toSnapshot = getTo ? getTo() : (to as Vec3);
+        const mid = arcControlPoint(from, toSnapshot, WALK_LIFT, WALK_JITTER);
+        const duration = Math.max(MIN_SEGMENT_DURATION, Vec3.distance(from, toSnapshot) / WALK_SPEED);
         ant.flyTo(from, mid, to, duration, Vec3.UP, false, onDone);
     }
 

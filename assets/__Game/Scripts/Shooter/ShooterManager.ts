@@ -77,6 +77,7 @@ export class ShooterManager extends Component {
 
     protected onDestroy(): void {
         EventBus.off(GameEvents.GRID_FACE_ADVANCED, this.onFaceAdvanced);
+        this.antManager?.dispose();
     }
 
     /** Only the front-most shooter of a line can fire; the rest wait their turn. */
@@ -113,10 +114,15 @@ export class ShooterManager extends Component {
             return;
         }
 
-        this.antManager.spawnSwarm(shooter.data.Color, shooter.data.Ammo, atWorldPos, () => {
-            this.slotManager.free(slot);
-            shooter.node.destroy();
-        });
+        this.antManager.spawnSwarm(shooter.data.Color, shooter.data.Ammo, atWorldPos,
+            () => {
+                shooter.data.Ammo--;
+                shooter.updateUI();
+            },
+            () => {
+                this.slotManager.free(slot);
+                shooter.node.destroy();
+            });
     }
 
     private onFaceAdvanced = () => {
