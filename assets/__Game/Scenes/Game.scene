@@ -1790,7 +1790,9 @@
       "__id__": 45
     },
     "retryBtn": null,
-    "logo": null,
+    "logo": {
+      "__id__": 35
+    },
     "_id": "11nPslgK9HEryrcn/Ith6f"
   },
   {
