@@ -37,18 +37,28 @@ export class Tile extends Component {
      * World position on this tile's bottom, `outwardDir`-facing edge rather than its center
      * (the tile's own position is its mesh center) — so an approaching ant stops right at the
      * surface instead of climbing/walking into the middle of the cube. Falls back to the center
-     * if the render model's bounds aren't ready yet (e.g. called before its first frame).
+     * if the mesh has no authored bounds.
+     *
+     * `outwardDir` is in the tile's own local space (e.g. the grid's fixed local -Z peel face),
+     * not world space: the point is built from the mesh's own raw vertex-space bounds (fixed
+     * geometry, untouched by node scale/rotation) and only then carried into world space via the
+     * node's full world matrix, so it still lands on the true face/edge even when the grid has
+     * been rotated to an arbitrary angle.
      */
     getPickupPoint(outwardDir: Vec3): Vec3 {
-        const center = this.node.worldPosition;
-        const halfExtents = this.renderer.model?.worldBounds?.halfExtents;
-        if (!halfExtents) return center.clone();
+        const struct = this.renderer.mesh?.struct;
+        const min = struct?.minPosition;
+        const max = struct?.maxPosition;
+        if (!min || !max) return this.renderer.node.worldPosition.clone();
 
-        return new Vec3(
-            center.x + outwardDir.x * halfExtents.x,
-            center.y - halfExtents.y,
-            center.z + outwardDir.z * halfExtents.z,
+        const local = new Vec3(
+            (min.x + max.x) / 2 + outwardDir.x * (max.x - min.x) / 2,
+            (min.y + max.y) / 2 - (max.y - min.y) / 2,
+            (min.z + max.z) / 2 + outwardDir.z * (max.z - min.z) / 2,
         );
+        // Transformed via the renderer's own node (not necessarily `this.node` if the mesh sits
+        // on a child) so an authored offset/rotation on that child is respected too.
+        return Vec3.transformMat4(local, local, this.renderer.node.worldMatrix);
     }
 
     /** One hit from a collecting ant. Returns true once the tile is fully depleted. */

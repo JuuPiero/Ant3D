@@ -14,13 +14,15 @@ const WALK_SPEED = 3
 const WALK_LIFT = 0.25;
 const WALK_JITTER = 0.3;
 
-// Climbing the grid face up/down to reach a tile that isn't at ground level. No jitter and a
-// fixed, purely axis-aligned outward normal - the grid's exposed face always faces world -Z
-// (tiles are peeled ascending Z, ants approach from the -Z/shooter side) regardless of which
-// direction a given ant happened to walk in from - so the body stays perfectly squared to the
-// grid the whole time it's touching it, instead of inheriting a diagonal from the walk-in.
+// Climbing the grid face up/down to reach a tile that isn't at ground level. No jitter - the
+// grid's exposed face is always its own local -Z (tiles are peeled ascending Z, ants approach
+// from the -Z/shooter side) regardless of which direction a given ant happened to walk in from,
+// so the body stays perfectly squared to the grid the whole time it's touching it, instead of
+// inheriting a diagonal from the walk-in. That local normal is carried into world space via
+// GridManager.getOutwardNormal() so it still tracks the wall correctly if the grid itself has
+// been rotated to some arbitrary angle, instead of assuming it always faces world -Z.
 const CLIMB_SPEED = 2;
-const GRID_OUTWARD_NORMAL = new Vec3(0, 0, -1);
+const GRID_LOCAL_OUTWARD_NORMAL = new Vec3(0, 0, -1);
 
 /**
  * Orchestrates the whole ant lifecycle once a shooter releases its swarm: spawn -> walk to the
@@ -93,7 +95,7 @@ export class AntManager {
         // (not snapshotted) while climbing: a tile below it in the same column can get collected
         // and settle this one down mid-climb, and the ant needs to track that, not fly to a
         // now-stale position.
-        const getTop = () => tile.getPickupPoint(GRID_OUTWARD_NORMAL);
+        const getTop = () => tile.getPickupPoint(GRID_LOCAL_OUTWARD_NORMAL);
         const top = getTop();
         const needsClimb = tile.data.GridPosition.y > 0;
 
@@ -111,7 +113,7 @@ export class AntManager {
         };
 
         if (needsClimb) {
-            const base = new Vec3(top.x, start.y, top.z);
+            const base = this.groundPointBelow(top, start.y);
             this.walk(ant, start, base, () => this.climb(ant, base, getTop, onArrived));
         } else {
             this.walk(ant, start, top, onArrived);
@@ -124,11 +126,21 @@ export class AntManager {
         const holePos = this.hole.worldPosition.clone();
 
         if (wasClimbing) {
-            const base = new Vec3(top.x, holePos.y, top.z);
+            const base = this.groundPointBelow(top, holePos.y);
             this.climb(ant, top, base, () => this.walk(ant, base, holePos, () => this.arriveAtHole(ant)));
         } else {
             this.walk(ant, top, holePos, () => this.arriveAtHole(ant));
         }
+    }
+
+    /**
+     * Point at ground height `groundY`, directly below/above `top` along the grid's own vertical
+     * (climb) axis - not necessarily world Y if the grid has been rotated so its face tilts.
+     */
+    private groundPointBelow(top: Vec3, groundY: number): Vec3 {
+        const up = this.gridManager.getUpAxis();
+        const t = (top.y - groundY) / up.y;
+        return new Vec3(top.x - up.x * t, groundY, top.z - up.z * t);
     }
 
     private arriveAtHole(ant: Ant) {
@@ -155,7 +167,7 @@ export class AntManager {
             ? () => Vec3.lerp(new Vec3(), from, getTo(), 0.5)
             : arcControlPoint(from, toSnapshot, 0, 0);
         const duration = Math.max(MIN_SEGMENT_DURATION, Vec3.distance(from, toSnapshot) / CLIMB_SPEED);
-        ant.flyTo(from, mid, to, duration, GRID_OUTWARD_NORMAL, true, onDone);
+        ant.flyTo(from, mid, to, duration, this.gridManager.getOutwardNormal(), true, onDone);
     }
 
 }

@@ -19,6 +19,10 @@ export class GridManager extends Component {
     private zCounts = new Map<number, number>();
     private faceZ = -1;
 
+    /** The grid's exposed (peel) face and climb direction, in the grid's own local space. */
+    private static readonly LOCAL_OUTWARD_NORMAL = new Vec3(0, 0, -1);
+    private static readonly LOCAL_UP_AXIS = new Vec3(0, 1, 0);
+
     public initialize(levelData: LevelData) {
         const tilePrefab = ServiceLocator.get(GameConfig).tilePrefab;
         const tileDatas = levelData.Cubes;
@@ -43,6 +47,20 @@ export class GridManager extends Component {
         // this.node.eulerAngles = levelData.DefaultRotation;
         // this.node.setWorldPosition(levelData.GridOrigin);
 
+    }
+
+    /**
+     * World-space direction the grid's exposed face currently points, following whatever
+     * rotation this grid node has been given - so a climbing ant can square its body to a
+     * tilted wall instead of assuming the face always faces world -Z.
+     */
+    getOutwardNormal(out: Vec3 = new Vec3()): Vec3 {
+        return Vec3.transformQuat(out, GridManager.LOCAL_OUTWARD_NORMAL, this.node.worldRotation);
+    }
+
+    /** World-space direction of "straight up the wall" for this grid, following its rotation. */
+    getUpAxis(out: Vec3 = new Vec3()): Vec3 {
+        return Vec3.transformQuat(out, GridManager.LOCAL_UP_AXIS, this.node.worldRotation);
     }
 
     /** First live tile of `color` currently sitting on the outermost (min-Z) face, if any. */
