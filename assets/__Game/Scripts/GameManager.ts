@@ -7,6 +7,7 @@ import { PREVIEW } from 'cc/env';
 import { ETrackingEvent, TrackingManager } from '../../_iKame/Scripts/TrackingManager';
 import { GameConfig } from './Data/GameConfig';
 import { ColorsConfig } from './Data/ColorsConfig';
+import { NavigationContainer } from '../../_iKame/Scripts/Navigation/NavigationContainer';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
@@ -36,7 +37,6 @@ export class GameManager extends Component {
         EventBus.on(GameEvents.LEVEL_WIN, this.onWinGame);
         EventBus.on(GameEvents.LEVEL_LOSE, this.onLoseGame);
         EventBus.on(GameEvents.TOGGLE_VIDEO, this.onToggleVideo);
-
         EventBus.on(GameEvents.RELEASE_SHOOTER, this.onProgress);
 
 
@@ -47,9 +47,7 @@ export class GameManager extends Component {
         EventBus.off(GameEvents.LEVEL_WIN, this.onWinGame)
         EventBus.off(GameEvents.LEVEL_LOSE, this.onLoseGame);
         EventBus.off(GameEvents.TOGGLE_VIDEO, this.onToggleVideo);
-
         EventBus.off(GameEvents.RELEASE_SHOOTER, this.onProgress);
-
 
     }
 
@@ -62,11 +60,11 @@ export class GameManager extends Component {
     }
 
     onWinGame = () => {
-
+        ServiceLocator.get(NavigationContainer).stack.navigate('EndGameScreen')
     }
 
     onLoseGame = () => {
-
+        ServiceLocator.get(NavigationContainer).stack.navigate('EndGameScreen')
 
     }
 
@@ -107,6 +105,7 @@ export class GameManager extends Component {
 
         if (this.progress === this.total) {
             TrackingManager.TrackEvent(ETrackingEvent.CHALLENGE_SOLVED)
+            EventBus.emit(GameEvents.LEVEL_WIN)
         }
     }
 

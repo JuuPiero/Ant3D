@@ -17,7 +17,7 @@ const PICKUP_PAUSE = 0.08;
 const GRAB_PUNCH_DURATION = 0.25;
 
 // Ground approach (slot<->grid, grid<->hole): slow, visible pace with a light bouncy arc.
-const WALK_SPEED = 3
+const WALK_SPEED = 4
 const WALK_LIFT = 0.25;
 const WALK_JITTER = 0.3;
 
@@ -28,7 +28,7 @@ const WALK_JITTER = 0.3;
 // inheriting a diagonal from the walk-in. That local normal is carried into world space via
 // GridManager.getOutwardNormal() so it still tracks the wall correctly if the grid itself has
 // been rotated to some arbitrary angle, instead of assuming it always faces world -Z.
-const CLIMB_SPEED = 3;
+const CLIMB_SPEED = 4;
 const GRID_LOCAL_OUTWARD_NORMAL = new Vec3(0, 0, -1);
 
 // However scattered the wall approach is, every ant heading back to the hole is routed through
