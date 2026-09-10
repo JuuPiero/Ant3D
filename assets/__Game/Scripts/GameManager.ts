@@ -37,6 +37,9 @@ export class GameManager extends Component {
         EventBus.on(GameEvents.LEVEL_LOSE, this.onLoseGame);
         EventBus.on(GameEvents.TOGGLE_VIDEO, this.onToggleVideo);
 
+        EventBus.on(GameEvents.RELEASE_SHOOTER, this.onProgress);
+
+
     }
 
     protected onDisable(): void {
@@ -45,11 +48,17 @@ export class GameManager extends Component {
         EventBus.off(GameEvents.LEVEL_LOSE, this.onLoseGame);
         EventBus.off(GameEvents.TOGGLE_VIDEO, this.onToggleVideo);
 
+        EventBus.off(GameEvents.RELEASE_SHOOTER, this.onProgress);
+
+
     }
 
 
     onNewgame = () => {
         this.levelManager.initialize();
+        this.total = this.levelManager.levelData.ShooterSpawnData.length
+
+
     }
 
     onWinGame = () => {

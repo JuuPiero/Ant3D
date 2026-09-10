@@ -41,6 +41,14 @@ export class Ant extends Component {
      * Flies along the quadratic Bezier p0->p1->p2, with a footstep-like hop layered on top of
      * the curve and the node turning to face its direction of travel.
      *
+     * Travel along the curve itself eases in and out (slow-fast-slow) rather than moving at a
+     * constant rate, so arriving at one leg's endpoint and departing on the next both read as a
+     * natural decelerate-then-accelerate rather than a robotic constant-speed cut - which is what
+     * lets two back-to-back legs (e.g. arriving at a tile, then immediately turning to leave it)
+     * flow into each other smoothly instead of needing a dead stop in between to hide the seam.
+     * The footstep hop still ticks on real elapsed time underneath that, so its cadence doesn't
+     * stretch or compress with the eased travel speed.
+     *
      * `up` is the body's reference "up" axis: world-up while walking the ground, or the wall's
      * outward normal while climbing a vertical face - so climbing visibly tips the body upright
      * against the wall (treating it as the new floor) instead of just floating up the Y axis.
@@ -67,12 +75,13 @@ export class Ant extends Component {
                     resolvePoint(p1, p1v);
                     resolvePoint(p2, p2v);
 
-                    bezierPoint(p0, p1v, p2v, ratio, pos);
+                    const eased = smoothstep(ratio);
+                    bezierPoint(p0, p1v, p2v, eased, pos);
                     const elapsed = ratio * duration;
                     pos.y += Math.max(0, Math.sin(elapsed * HOP_RATE * Math.PI * 2)) * HOP_HEIGHT;
                     this.node.setWorldPosition(pos);
 
-                    bezierTangent(p0, p1v, p2v, ratio, tangent);
+                    bezierTangent(p0, p1v, p2v, eased, tangent);
                     if (tangent.lengthSqr() > 1e-6) {
                         // The Bee_2 mesh is authored facing local +Z, not Cocos' usual -Z
                         // "forward" convention, so `view` should point straight along the

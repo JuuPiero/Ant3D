@@ -6,10 +6,15 @@ import { GridManager } from '../Grid/GridManager';
 import { Tile } from '../Grid/Tile';
 import { EventBus } from 'db://assets/_iKame/Scripts/EventBus';
 import { GameEvents } from '../GameEvents';
+import { punch } from 'db://assets/_iKame/Scripts/Tween/TweenUntils';
 
 const SPAWN_STAGGER = 0.08;
 const MIN_SEGMENT_DURATION = 0.25;
-const PICKUP_PAUSE = 0.15; // beat at the tile before turning around to head back down/out
+// Travel itself now eases to a near-stop on arrival and eases back up to speed on departure (see
+// Ant.flyTo), so this beat is just long enough to sell the grab (its punch pop) before turning
+// around - not a dead stop papering over an instant reversal like it used to be.
+const PICKUP_PAUSE = 0.08;
+const GRAB_PUNCH_DURATION = 0.25;
 
 // Ground approach (slot<->grid, grid<->hole): slow, visible pace with a light bouncy arc.
 const WALK_SPEED = 3
@@ -136,9 +141,9 @@ export class AntManager {
             if (this.gridManager.collectTile(tile)) {
                 tile.pickUp(ant.tileCollectedPos);
             }
-            // A short beat before turning around: without it, the 180-degree reversal (facing
-            // up the wall to facing down it) starts instantly off the climb's own momentum,
-            // which reads as a jerky whip-turn no matter how eased the rotation itself is.
+            // A quick tactile "got it" pop right on the grab, plus a short beat before turning
+            // around so that pop has time to read before the body starts swinging the other way.
+            punch(ant.node, GRAB_PUNCH_DURATION);
             tween({})
                 .delay(PICKUP_PAUSE)
                 .call(() => this.travelToHole(ant, didClimb))

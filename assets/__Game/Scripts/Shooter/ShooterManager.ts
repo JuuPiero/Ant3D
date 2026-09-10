@@ -121,6 +121,7 @@ export class ShooterManager extends Component {
             },
             () => {
                 this.slotManager.free(slot);
+                EventBus.emit(GameEvents.RELEASE_SHOOTER);
                 shooter.node.destroy();
             });
     }
